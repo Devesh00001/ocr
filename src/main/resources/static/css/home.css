@@ -1,0 +1,139 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: green;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #999999;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.61);
+  backdrop-filter: blur(5px);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #000000;
+}
+
+div.main {
+  border-radius: 20px;
+
+  padding: 20px;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.61);
+  backdrop-filter: blur(5px);
+  width: 50%;
+  margin: auto;
+  margin-top: 150px;
+
+}
+div.result {
+  border-radius: 5px;
+  padding: 20px;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.61);
+  margin: auto;
+  margin-top: 10px;
+  width: fit-content;
+  backdrop-filter: blur(5px);
+
+
+}
+.myVideo {
+
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 4vw;
+
+}
+div.container {
+
+   display: flex;
+   justify-content: center;
+  width: 100%;
+  opacity: 0.6;
+}
+
+input[type="file"] {
+  z-index: -1;
+  top: 10px;
+  left: 8px;
+  font-size: 17px;
+  color: #b8b8b8;
+}
+video{
+display: flex;
+    object-fit: cover;
+}
+
+div.button-wrap {
+
+
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: green;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+form{
+    padding: inherit;
+}
+
+p{
+    color: white;
+    font-weight: lighter;
+    background: black
+}

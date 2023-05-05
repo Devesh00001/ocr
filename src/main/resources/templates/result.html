@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" th:href="@{/css/result.css}">
+  <link rel="icon" type="image/x-icon" href="static/images/faviconMatrix.ico">
+
+  <title>Result page</title>
+</head>
+<ul>
+  <li><a class="active" >OCR-Scanner</a></li>
+</ul>
+<video autoplay muted loop playsinline class="myVideo" id="myVideo">
+  <source th:src="@{/video/matrix-47802.mp4}" type="video/mp4">
+</video>
+<div class="result">
+  <table>
+    <tr>
+      <th>Regex</th>
+      <th>Result</th>
+    </tr>
+    <tr>
+      <td>According to first regex</td>
+      <td><span th:text="${Result1}"></span></td>
+    </tr>
+    <tr>
+      <td>According to second regex</td>
+      <td><span th:text="${Result2}"></span></td>
+    </tr>
+    <tr>
+      <td>According to third regex</td>
+      <td><span th:text="${Result3}"></span></td>
+    </tr>
+    <tr>
+      <td>According to forth regex</td>
+      <td><span th:text="${Result4}"></span></td>
+    </tr>
+  </table>
+</div>
+<body>
+
+</body>
+</html>

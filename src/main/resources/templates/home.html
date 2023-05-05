@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/home.css}">
+    <link rel="icon" type="image/x-icon" href="static/images/faviconMatrix.ico">
+    <script type="text/javascript" th:src="@{/js/home.js}"></script>
+    <title>Home page</title>
+</head>
+<body>
+
+<ul>
+    <li><a class="active">OCR-Scanner</a></li>
+
+</ul>
+<video autoplay muted loop playsinline class="myVideo" id="myVideo">
+    <source th:src="@{/video/matrix-47802.mp4}" type="video/mp4">
+</video>
+
+<div class="main">
+
+    <form method="post" action="/home" id="regex_form" enctype="multipart/form-data" >
+        <div class="container">
+            <div class="button-wrap">
+                <label class="button">Upload File</label>
+                <input id="file" type="file" name="file" required>
+            </div>
+        </div>
+
+        <div id="regex">
+            <label for="regex1" style="color: white">1 Regex:</label><br>
+            <input type="text" id="regex1" name="regex1" required><br>
+
+
+        </div>
+        <button type="button" onclick="addField()">Add Regex</button>
+        <input type="submit" id="myBtn" value="Submit" >
+    </form>
+</div>
+
+</body>
+</html>
